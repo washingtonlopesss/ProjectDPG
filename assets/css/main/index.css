@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Arimo", serif;
+}
+
+body {
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+}
+
+.home {
+    background-image: url('https://images.unsplash.com/photo-1711071809918-06de943027a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.home p {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.home article {
+    text-align: center;
+}
+
+.services {
+    height: calc(100vh - var(--height-top-bar));
+}
+
+.services ul {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.services li {
+    list-style: none;
+    width: 100%;
+    text-align: justify;
+    background-color: var(--background-dark);
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: -1px 5px 10px -4px rgba(0,0,0,0.20);
+    -webkit-box-shadow: -1px 5px 10px -4px rgba(0,0,0,0.20);
+    -moz-box-shadow: -1px 5px 10px -4px rgba(0,0,0,0.20);
+}
+
+.services h3 {
+    text-align: left;
+    margin: 5px 20px;
+}
+
+.services > article > ul > li > p {
+    text-align: justify;
+    margin: 0 20px 20px 20px;
+}
+
+.services img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.works > ul {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: calc(100vh - 300px);
+}
+
+.works li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    padding: 15px;
+    background-size: cover;
+}
+
+.works li > h3,
+.works li > p,
+.works li > a {
+    opacity: 0;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+}
+
+li:hover p, li:hover h3, li:hover a {
+    opacity: 1;
+}
+
+#works li a:hover {
+    transform: scale(1.1);
+}
+
+#service1 {
+    background-image: url('https://img.freepik.com/fotos-gratis/trabalhadores-que-examinam-o-trabalho_1122-970.jpg?t=st=1736640765~exp=1736644365~hmac=d211014e9656c942161c4a531c3132c1c8a43c9ce28b2411055ed96f629b0ed4&w=1380');
+}
+
+#service2 {
+    background-image: url('https://img.freepik.com/fotos-gratis/atividade-de-construcao-no-centro-de-dubai-emirados-arabes-unidos-dubai-e-a-cidade-e-o-emirado-mais-populoso-dos-emirados-arabes-unidos_231208-7566.jpg?t=st=1736640909~exp=1736644509~hmac=382be9cc2071e1309c94a6f0c5145286571e9396d1bdaa8e292fc9dd795c5403&w=1380');
+}
+
+#service3 {
+    background-image: url('https://img.freepik.com/fotos-gratis/jovem-artesao-construindo-uma-casa_1303-27967.jpg?t=st=1736640827~exp=1736644427~hmac=d2a15c837411e6b1ea8ed831ec4fc91276569d22a4fa9ac4d50445d9e17375ab&w=1380');
+}
+
+#service4 {
+    background-image: url('https://img.freepik.com/fotos-gratis/silhueta-de-construcao_1127-3246.jpg?t=st=1736640849~exp=1736644449~hmac=0ee3fe5174be6feac719114a166e670acdd027e2c6c978fcc970ce1176bbfed9&w=1380');
+}
+
+#works li:hover {
+    background-image: none;
+    background-color: var(--background-dark);
+}
+
+#about {
+    width: 100%;
+    height: calc(100vh - var(--height-top-bar));
+    background-image: url('https://img.freepik.com/fotos-gratis/engenheiros-moveis_1098-15445.jpg?t=st=1736643046~exp=1736646646~hmac=6280dc825bbc421ed1f11171675aeb6c8b12f68b8d78d720416edb0a043e8105&w=1380');
+    background-position: right;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#about article {
+    width: 50%;
+    height: 80%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+}
+
+#about article > h3 {
+    width: 50%;
+    max-width: 600px;
+    border: 1px solid black;
+}
+
+#about div {
+    width: 100%;
+    height: 20%;
+    background-color: var(--background-dark);
+    position: absolute;
+    bottom: 0;
+}
